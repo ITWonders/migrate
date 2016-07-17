@@ -11,6 +11,7 @@ import (
 	"time"
 
 	"github.com/fatih/color"
+	_ "github.com/gemnasium/migrate/driver/cassandra"
 	"github.com/gemnasium/migrate/file"
 	"github.com/gemnasium/migrate/migrate"
 	"github.com/gemnasium/migrate/migrate/direction"
