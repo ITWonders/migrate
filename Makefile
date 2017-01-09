@@ -13,6 +13,9 @@ test:
 build:
 	$(DCR) go-build
 
+buildlinux:
+	GOOS=linux go build -v -o migrate	
+
 release: test build docker-build docker-push
 
 docker-build:
